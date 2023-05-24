@@ -1,3 +1,9 @@
+#!/usr/bin/env python3
+
+##################################
+# Amber J. | https://electri.dev #
+##################################
+
 import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
 
@@ -29,7 +35,6 @@ def get_song_details(uri):
 
     return table
 
-# Prompt user for album or playlist link
 uri = input("Enter a Spotify playlist or album link: ")
 output_table = get_song_details(uri)
 print(output_table)
